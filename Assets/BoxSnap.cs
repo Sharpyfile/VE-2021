@@ -10,6 +10,8 @@ public class BoxSnap : MonoBehaviour
             Debug.Log(other.tag);
             other.transform.position = transform.position;
             other.transform.rotation = transform.rotation;
+            other.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            other.GetComponent<Rigidbody>().Sleep();
         }
     }
 }

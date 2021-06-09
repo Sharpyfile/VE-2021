@@ -8,6 +8,6 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     public void LoadTestScene()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("ProperScene");
     }
 }
